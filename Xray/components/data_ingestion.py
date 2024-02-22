@@ -20,8 +20,8 @@ class DataIngestion:
             pass
         except Exception as e:
             raise XRayException(e,sys)
-        
-        
+
+
 
 
         
