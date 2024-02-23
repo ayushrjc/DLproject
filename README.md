@@ -1,6 +1,15 @@
 # Lungs X-ray Classification
 
-## create project folder
+## Workflow
+
+- constants
+- config_entity
+- artifact_entity
+- components
+- pipeline
+- main
+
+## Create project folder
 
 ```bash
 git init
@@ -8,7 +17,7 @@ git init
 ```bash
 git remote -v 
 ```
-## (to check if any git repository connected)
+(to check if any git repository connected)
 
 ## Connect to git repository
 ```bash
@@ -42,4 +51,16 @@ source activate ./venv
 OR 
 ```bash
 conda activate ./venv
+```
+
+## Configure AWS CLI
+```bash
+aws configure
+```
+```bash
+AWS_ACCESS_KEY_ID= ***
+
+AWS_SECRET_ACCESS_KEY= ***
+
+AWS_REGION= us-east-1
 ```
