@@ -45,3 +45,21 @@ BATCH_SIZE: int = 2
 SHUFFLE: bool = False
 
 PIN_MEMORY: bool = True
+
+
+# model trainer constants
+
+TRAINED_MODEL_DIR: str ="trained_model"
+
+TRAINED_MODEL_NAME: str="model.pt"
+
+DEVICE: torch.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
+STEP_SIZE: int = 6
+#It refers to the size of the steps taken to update model parameters during training
+
+GAMMA: int =0.5
+#In learning rate scheduling, gamma typically refers to the factor by which the learning rate is reduced after a certain number of epochs or iterations
+
+EPOCH: int = 1
+#An epoch is one complete pass through the entire training dataset during the training of a machine learning model
